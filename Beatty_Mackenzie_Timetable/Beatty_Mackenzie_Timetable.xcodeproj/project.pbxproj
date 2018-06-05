@@ -12,6 +12,11 @@
 		F234595220C6B6910040F5A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F234595020C6B6910040F5A4 /* Main.storyboard */; };
 		F234595420C6B6910040F5A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F234595320C6B6910040F5A4 /* Assets.xcassets */; };
 		F234595720C6B6910040F5A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F234595520C6B6910040F5A4 /* LaunchScreen.storyboard */; };
+		F234596A20C6BB100040F5A4 /* monday.png in Resources */ = {isa = PBXBuildFile; fileRef = F234596920C6BB100040F5A4 /* monday.png */; };
+		F234597020C6BC2D0040F5A4 /* thursday.png in Resources */ = {isa = PBXBuildFile; fileRef = F234596D20C6BC2D0040F5A4 /* thursday.png */; };
+		F234597120C6BC2D0040F5A4 /* wednesday.png in Resources */ = {isa = PBXBuildFile; fileRef = F234596E20C6BC2D0040F5A4 /* wednesday.png */; };
+		F234597220C6BC2D0040F5A4 /* friday.png in Resources */ = {isa = PBXBuildFile; fileRef = F234596F20C6BC2D0040F5A4 /* friday.png */; };
+		F234597420C6BC7D0040F5A4 /* tuesday.png in Resources */ = {isa = PBXBuildFile; fileRef = F234597320C6BC7D0040F5A4 /* tuesday.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		F234595320C6B6910040F5A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F234595620C6B6910040F5A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F234595820C6B6910040F5A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F234596920C6BB100040F5A4 /* monday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monday.png; sourceTree = "<group>"; };
+		F234596D20C6BC2D0040F5A4 /* thursday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thursday.png; sourceTree = "<group>"; };
+		F234596E20C6BC2D0040F5A4 /* wednesday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wednesday.png; sourceTree = "<group>"; };
+		F234596F20C6BC2D0040F5A4 /* friday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = friday.png; sourceTree = "<group>"; };
+		F234597320C6BC7D0040F5A4 /* tuesday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tuesday.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,7 @@
 		F234594B20C6B6910040F5A4 /* Beatty_Mackenzie_Timetable */ = {
 			isa = PBXGroup;
 			children = (
+				F234595E20C6BA9E0040F5A4 /* Image */,
 				F234594C20C6B6910040F5A4 /* AppDelegate.swift */,
 				F234594E20C6B6910040F5A4 /* ViewController.swift */,
 				F234595020C6B6910040F5A4 /* Main.storyboard */,
@@ -62,6 +73,18 @@
 				F234595820C6B6910040F5A4 /* Info.plist */,
 			);
 			path = Beatty_Mackenzie_Timetable;
+			sourceTree = "<group>";
+		};
+		F234595E20C6BA9E0040F5A4 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				F234596920C6BB100040F5A4 /* monday.png */,
+				F234596F20C6BC2D0040F5A4 /* friday.png */,
+				F234596D20C6BC2D0040F5A4 /* thursday.png */,
+				F234597320C6BC7D0040F5A4 /* tuesday.png */,
+				F234596E20C6BC2D0040F5A4 /* wednesday.png */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,7 +146,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F234595720C6B6910040F5A4 /* LaunchScreen.storyboard in Resources */,
+				F234597020C6BC2D0040F5A4 /* thursday.png in Resources */,
+				F234597220C6BC2D0040F5A4 /* friday.png in Resources */,
+				F234597120C6BC2D0040F5A4 /* wednesday.png in Resources */,
 				F234595420C6B6910040F5A4 /* Assets.xcassets in Resources */,
+				F234597420C6BC7D0040F5A4 /* tuesday.png in Resources */,
+				F234596A20C6BB100040F5A4 /* monday.png in Resources */,
 				F234595220C6B6910040F5A4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

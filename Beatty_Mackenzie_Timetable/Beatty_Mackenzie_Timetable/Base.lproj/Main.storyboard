@@ -1,24 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SmJ-Zy-Aia">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Monday-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Beatty_Mackenzie_Timetable" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="D4f-bG-Huw">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YCw-aE-ACD">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="RLz-Q0-Cto">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ZXJ-wL-jPc"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="D4f-bG-Huw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6ia-Oo-C2l"/>
+                            <constraint firstItem="YCw-aE-ACD" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="CdE-wP-aBE"/>
+                            <constraint firstItem="D4f-bG-Huw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="N0u-9u-lZX"/>
+                            <constraint firstItem="YCw-aE-ACD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WYX-TF-7Jw"/>
+                            <constraint firstItem="D4f-bG-Huw" firstAttribute="top" secondItem="YCw-aE-ACD" secondAttribute="bottom" id="Xh0-Yh-I4t"/>
+                            <constraint firstItem="YCw-aE-ACD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dP3-fK-dEK"/>
+                            <constraint firstItem="D4f-bG-Huw" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="zxX-8Q-sum"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Monday" image="monday.png" id="5BQ-VU-TZZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-903.20000000000005" y="915.29235382308855"/>
+        </scene>
+        <!--Tuesday-->
+        <scene sceneID="RR4-lf-2c0">
+            <objects>
+                <viewController id="p85-Yp-maJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZF7-Go-Et5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="dcp-Mx-e6C"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Tuesday" image="tuesday.png" id="sa7-kQ-UEs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ls8-s3-pRb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-130" y="915"/>
+        </scene>
+        <!--Wednesday-->
+        <scene sceneID="lJG-ha-HYh">
+            <objects>
+                <viewController id="Wea-ql-pFZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sQS-dl-2aF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Hjg-C5-Pyg"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Wednesday" image="wednesday.png" id="ZFh-Ek-rLS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zoR-0S-J6X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="598" y="915"/>
+        </scene>
+        <!--Thursday-->
+        <scene sceneID="Z5A-H3-syi">
+            <objects>
+                <viewController id="SlE-RS-RDa" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qxR-wo-JzG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Fx1-D7-SZ2"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Thursday" image="thursday.png" id="fmv-w6-sOv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AR6-ld-HVV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1326" y="915"/>
+        </scene>
+        <!--Friday-->
+        <scene sceneID="Qoo-cz-YEk">
+            <objects>
+                <viewController id="JeR-Gg-97M" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="21u-ds-oMY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="kXm-0r-GwY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Friday" image="friday.png" id="kKa-BF-x4k"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wOL-nw-S8B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2004" y="914"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Yjw-4u-SVn">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="SmJ-Zy-Aia" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="vm6-oA-iNv"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EWm-Vd-hLn">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="W8E-1k-UWH"/>
+                        <segue destination="p85-Yp-maJ" kind="relationship" relationship="viewControllers" id="pn2-Yt-ZfL"/>
+                        <segue destination="Wea-ql-pFZ" kind="relationship" relationship="viewControllers" id="rmC-K4-FRc"/>
+                        <segue destination="SlE-RS-RDa" kind="relationship" relationship="viewControllers" id="Rxt-HR-ZZ6"/>
+                        <segue destination="JeR-Gg-97M" kind="relationship" relationship="viewControllers" id="grt-Zn-RBA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bGc-dJ-2VQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1010" y="-17"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="friday.png" width="26" height="26"/>
+        <image name="monday.png" width="26" height="26"/>
+        <image name="thursday.png" width="26" height="26"/>
+        <image name="tuesday.png" width="26" height="26"/>
+        <image name="wednesday.png" width="26" height="26"/>
+    </resources>
 </document>
