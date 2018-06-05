@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+print("git remote add origin git@github.com:perceptionfoundry/Beatty_Mackenzie_Timetable.git")
     }
 
 
