@@ -1,0 +1,16 @@
+PODS:
+  - Shift (0.2.2)
+
+DEPENDENCIES:
+  - Shift
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Shift
+
+SPEC CHECKSUMS:
+  Shift: 86dc634d046fc86a879dbfdb492739672cc092be
+
+PODFILE CHECKSUM: f2c799d6a174e683d7a016dd660c5c88c6b8a6b5
+
+COCOAPODS: 1.5.0

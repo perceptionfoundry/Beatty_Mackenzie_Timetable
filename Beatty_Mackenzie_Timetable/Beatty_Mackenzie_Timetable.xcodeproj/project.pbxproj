@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38FE1762D6A96E4F876382AA /* Pods_Beatty_Mackenzie_Timetable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB508C2EA50705CF56693F84 /* Pods_Beatty_Mackenzie_Timetable.framework */; };
 		F234594D20C6B6910040F5A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234594C20C6B6910040F5A4 /* AppDelegate.swift */; };
-		F234594F20C6B6910040F5A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234594E20C6B6910040F5A4 /* ViewController.swift */; };
+		F234594F20C6B6910040F5A4 /* MonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234594E20C6B6910040F5A4 /* MonVC.swift */; };
 		F234595220C6B6910040F5A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F234595020C6B6910040F5A4 /* Main.storyboard */; };
 		F234595420C6B6910040F5A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F234595320C6B6910040F5A4 /* Assets.xcassets */; };
 		F234595720C6B6910040F5A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F234595520C6B6910040F5A4 /* LaunchScreen.storyboard */; };
@@ -17,12 +18,24 @@
 		F234597120C6BC2D0040F5A4 /* wednesday.png in Resources */ = {isa = PBXBuildFile; fileRef = F234596E20C6BC2D0040F5A4 /* wednesday.png */; };
 		F234597220C6BC2D0040F5A4 /* friday.png in Resources */ = {isa = PBXBuildFile; fileRef = F234596F20C6BC2D0040F5A4 /* friday.png */; };
 		F234597420C6BC7D0040F5A4 /* tuesday.png in Resources */ = {isa = PBXBuildFile; fileRef = F234597320C6BC7D0040F5A4 /* tuesday.png */; };
+		F2ADBA7B20C7B4660071E2C2 /* Custom_Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ADBA7A20C7B4660071E2C2 /* Custom_Button.swift */; };
+		F2ADBA7D20C7B4740071E2C2 /* Custom_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ADBA7C20C7B4740071E2C2 /* Custom_View.swift */; };
+		F2C7E50720C7C07600CE8E9F /* task.png in Resources */ = {isa = PBXBuildFile; fileRef = F2C7E50620C7C07500CE8E9F /* task.png */; };
+		F2C7E50920C7C82E00CE8E9F /* taskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C7E50820C7C82E00CE8E9F /* taskCell.swift */; };
+		F2C7E50D20C7CD6200CE8E9F /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = F2C7E50C20C7CD6200CE8E9F /* setting.png */; };
+		F2C7E50F20C7E26500CE8E9F /* CreateTackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C7E50E20C7E26500CE8E9F /* CreateTackVC.swift */; };
+		F2C7E51120C7EAB900CE8E9F /* settingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C7E51020C7EAB900CE8E9F /* settingVC.swift */; };
+		F2C7E51320C7EACD00CE8E9F /* naviSettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C7E51220C7EACD00CE8E9F /* naviSettingVC.swift */; };
+		F2C7E51520C7F89800CE8E9F /* startTimeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C7E51420C7F89800CE8E9F /* startTimeVC.swift */; };
+		F2C7E51720C7F8AF00CE8E9F /* EndTimeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C7E51620C7F8AF00CE8E9F /* EndTimeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1043203CCF1623069FA9AE0E /* Pods-Beatty_Mackenzie_Timetable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beatty_Mackenzie_Timetable.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Beatty_Mackenzie_Timetable/Pods-Beatty_Mackenzie_Timetable.debug.xcconfig"; sourceTree = "<group>"; };
+		CB508C2EA50705CF56693F84 /* Pods_Beatty_Mackenzie_Timetable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beatty_Mackenzie_Timetable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F234594920C6B6910040F5A4 /* Beatty_Mackenzie_Timetable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beatty_Mackenzie_Timetable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F234594C20C6B6910040F5A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F234594E20C6B6910040F5A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F234594E20C6B6910040F5A4 /* MonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonVC.swift; sourceTree = "<group>"; };
 		F234595120C6B6910040F5A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F234595320C6B6910040F5A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F234595620C6B6910040F5A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -32,6 +45,17 @@
 		F234596E20C6BC2D0040F5A4 /* wednesday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wednesday.png; sourceTree = "<group>"; };
 		F234596F20C6BC2D0040F5A4 /* friday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = friday.png; sourceTree = "<group>"; };
 		F234597320C6BC7D0040F5A4 /* tuesday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tuesday.png; sourceTree = "<group>"; };
+		F2ADBA7A20C7B4660071E2C2 /* Custom_Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Custom_Button.swift; sourceTree = "<group>"; };
+		F2ADBA7C20C7B4740071E2C2 /* Custom_View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Custom_View.swift; sourceTree = "<group>"; };
+		F2C7E50620C7C07500CE8E9F /* task.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = task.png; sourceTree = "<group>"; };
+		F2C7E50820C7C82E00CE8E9F /* taskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskCell.swift; sourceTree = "<group>"; };
+		F2C7E50C20C7CD6200CE8E9F /* setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting.png; sourceTree = "<group>"; };
+		F2C7E50E20C7E26500CE8E9F /* CreateTackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTackVC.swift; sourceTree = "<group>"; };
+		F2C7E51020C7EAB900CE8E9F /* settingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingVC.swift; sourceTree = "<group>"; };
+		F2C7E51220C7EACD00CE8E9F /* naviSettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = naviSettingVC.swift; sourceTree = "<group>"; };
+		F2C7E51420C7F89800CE8E9F /* startTimeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = startTimeVC.swift; sourceTree = "<group>"; };
+		F2C7E51620C7F8AF00CE8E9F /* EndTimeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndTimeVC.swift; sourceTree = "<group>"; };
+		F46B1932711A1728507CDE0A /* Pods-Beatty_Mackenzie_Timetable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beatty_Mackenzie_Timetable.release.xcconfig"; path = "Pods/Target Support Files/Pods-Beatty_Mackenzie_Timetable/Pods-Beatty_Mackenzie_Timetable.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +63,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38FE1762D6A96E4F876382AA /* Pods_Beatty_Mackenzie_Timetable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A506D41F19E70E6DB9B7D74A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB508C2EA50705CF56693F84 /* Pods_Beatty_Mackenzie_Timetable.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C985F9E13A17D7144A574E76 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1043203CCF1623069FA9AE0E /* Pods-Beatty_Mackenzie_Timetable.debug.xcconfig */,
+				F46B1932711A1728507CDE0A /* Pods-Beatty_Mackenzie_Timetable.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F234594020C6B6910040F5A4 = {
 			isa = PBXGroup;
 			children = (
 				F234594B20C6B6910040F5A4 /* Beatty_Mackenzie_Timetable */,
 				F234594A20C6B6910040F5A4 /* Products */,
+				C985F9E13A17D7144A574E76 /* Pods */,
+				A506D41F19E70E6DB9B7D74A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,13 +108,20 @@
 		F234594B20C6B6910040F5A4 /* Beatty_Mackenzie_Timetable */ = {
 			isa = PBXGroup;
 			children = (
+				F29CC71920C6C2A8006C6D67 /* custom */,
 				F234595E20C6BA9E0040F5A4 /* Image */,
 				F234594C20C6B6910040F5A4 /* AppDelegate.swift */,
-				F234594E20C6B6910040F5A4 /* ViewController.swift */,
+				F234594E20C6B6910040F5A4 /* MonVC.swift */,
+				F2C7E50E20C7E26500CE8E9F /* CreateTackVC.swift */,
 				F234595020C6B6910040F5A4 /* Main.storyboard */,
 				F234595320C6B6910040F5A4 /* Assets.xcassets */,
 				F234595520C6B6910040F5A4 /* LaunchScreen.storyboard */,
 				F234595820C6B6910040F5A4 /* Info.plist */,
+				F2C7E50820C7C82E00CE8E9F /* taskCell.swift */,
+				F2C7E51020C7EAB900CE8E9F /* settingVC.swift */,
+				F2C7E51220C7EACD00CE8E9F /* naviSettingVC.swift */,
+				F2C7E51420C7F89800CE8E9F /* startTimeVC.swift */,
+				F2C7E51620C7F8AF00CE8E9F /* EndTimeVC.swift */,
 			);
 			path = Beatty_Mackenzie_Timetable;
 			sourceTree = "<group>";
@@ -78,6 +129,8 @@
 		F234595E20C6BA9E0040F5A4 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				F2C7E50C20C7CD6200CE8E9F /* setting.png */,
+				F2C7E50620C7C07500CE8E9F /* task.png */,
 				F234596920C6BB100040F5A4 /* monday.png */,
 				F234596F20C6BC2D0040F5A4 /* friday.png */,
 				F234596D20C6BC2D0040F5A4 /* thursday.png */,
@@ -87,6 +140,15 @@
 			path = Image;
 			sourceTree = "<group>";
 		};
+		F29CC71920C6C2A8006C6D67 /* custom */ = {
+			isa = PBXGroup;
+			children = (
+				F2ADBA7C20C7B4740071E2C2 /* Custom_View.swift */,
+				F2ADBA7A20C7B4660071E2C2 /* Custom_Button.swift */,
+			);
+			path = custom;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -94,9 +156,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F234595B20C6B6910040F5A4 /* Build configuration list for PBXNativeTarget "Beatty_Mackenzie_Timetable" */;
 			buildPhases = (
+				42DADCAB9FCC8394F524D69A /* [CP] Check Pods Manifest.lock */,
 				F234594520C6B6910040F5A4 /* Sources */,
 				F234594620C6B6910040F5A4 /* Frameworks */,
 				F234594720C6B6910040F5A4 /* Resources */,
+				3A5A1F5679F2B8AF962E44DF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -147,23 +211,72 @@
 			files = (
 				F234595720C6B6910040F5A4 /* LaunchScreen.storyboard in Resources */,
 				F234597020C6BC2D0040F5A4 /* thursday.png in Resources */,
+				F2C7E50720C7C07600CE8E9F /* task.png in Resources */,
 				F234597220C6BC2D0040F5A4 /* friday.png in Resources */,
 				F234597120C6BC2D0040F5A4 /* wednesday.png in Resources */,
 				F234595420C6B6910040F5A4 /* Assets.xcassets in Resources */,
 				F234597420C6BC7D0040F5A4 /* tuesday.png in Resources */,
 				F234596A20C6BB100040F5A4 /* monday.png in Resources */,
+				F2C7E50D20C7CD6200CE8E9F /* setting.png in Resources */,
 				F234595220C6B6910040F5A4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3A5A1F5679F2B8AF962E44DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Beatty_Mackenzie_Timetable/Pods-Beatty_Mackenzie_Timetable-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Shift/Shift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Shift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Beatty_Mackenzie_Timetable/Pods-Beatty_Mackenzie_Timetable-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42DADCAB9FCC8394F524D69A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Beatty_Mackenzie_Timetable-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F234594520C6B6910040F5A4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F234594F20C6B6910040F5A4 /* ViewController.swift in Sources */,
+				F2C7E51520C7F89800CE8E9F /* startTimeVC.swift in Sources */,
+				F234594F20C6B6910040F5A4 /* MonVC.swift in Sources */,
+				F2C7E50F20C7E26500CE8E9F /* CreateTackVC.swift in Sources */,
+				F2C7E51720C7F8AF00CE8E9F /* EndTimeVC.swift in Sources */,
+				F2C7E51120C7EAB900CE8E9F /* settingVC.swift in Sources */,
+				F2C7E51320C7EACD00CE8E9F /* naviSettingVC.swift in Sources */,
+				F2C7E50920C7C82E00CE8E9F /* taskCell.swift in Sources */,
+				F2ADBA7D20C7B4740071E2C2 /* Custom_View.swift in Sources */,
+				F2ADBA7B20C7B4660071E2C2 /* Custom_Button.swift in Sources */,
 				F234594D20C6B6910040F5A4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,6 +419,7 @@
 		};
 		F234595C20C6B6910040F5A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1043203CCF1623069FA9AE0E /* Pods-Beatty_Mackenzie_Timetable.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -324,6 +438,7 @@
 		};
 		F234595D20C6B6910040F5A4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F46B1932711A1728507CDE0A /* Pods-Beatty_Mackenzie_Timetable.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
