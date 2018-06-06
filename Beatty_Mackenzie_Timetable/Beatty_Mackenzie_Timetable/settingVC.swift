@@ -12,14 +12,46 @@ class settingVC: UIViewController {
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
 
+    @IBOutlet weak var darkModeSwitch: UISwitch!
+   
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        darkModeSwitch.isOn = appDelegate.darkMode
 
+        print("*********************")
+
+        
+        print(darkModeSwitch.isOn)
+        print(appDelegate.darkMode)
+        
+        print("*********************")
+        
         let tap = UITapGestureRecognizer(target: self, action: #selector (Quit))
         view.addGestureRecognizer(tap)
-//        appDelegate.darkMode = true
+        
+
         
     }
+    @IBAction func switchAction(_ sender: UISwitch) {
+        
+        print(sender.isOn)
+        
+        if darkModeSwitch.isOn ==  true{
+            
+                        appDelegate.darkMode = false
+            
+                    }
+            
+                    else{
+            
+                        appDelegate.darkMode = true
+            
+                    }
+    }
+    
 
     @objc func Quit(){
         

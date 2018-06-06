@@ -12,6 +12,9 @@ import Shift
 
 class MonVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    
+    let Delegate = UIApplication.shared.delegate as! AppDelegate
+    
     var dumpData = [["Task" : "PHYSIC HOME WORK", "Time" : "12:30"], ["Task" : "CHEMISTRY TEST", "Time" : "14:30"], ["Task" : "ENGLISH PRESENTATION", "Time" : "9:30"], ["Task" : "SOCIAL STUDIES", "Time" : "10:00"],]
 
     @IBOutlet weak var taskTable: UITableView!
@@ -23,19 +26,8 @@ class MonVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
+        self.backgroundView()
         
-        let view = self.view as! ShiftView
-                view.setColors([
-                    UIColor.yellow,
-                                UIColor.orange,
-                                UIColor.brown,
-                                UIColor.blue,
-                                UIColor.purple,
-                                UIColor.green,
-                                UIColor.cyan,
-                    ])
-                view.startTimedAnimation()
         
 
      taskTable.delegate = self
@@ -44,6 +36,7 @@ class MonVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         
     }
+    
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dumpData.count
@@ -61,20 +54,43 @@ class MonVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         return cell
     }
+    
+    func backgroundView(){
+        
+        let view = self.view as! ShiftView
+        
+        if Delegate.darkMode == false{
+            
+            
+            view.setColors([
+                UIColor.yellow,
+                UIColor.orange,
+                UIColor.brown,
+                UIColor.blue,
+                UIColor.purple,
+                UIColor.green,
+                UIColor.cyan,
+                ])
+            view.startTimedAnimation()
+        }
+            
+            
+            
+            
+        else{
+            view.setColors([
+                UIColor.black,
+                UIColor.darkGray,
+                UIColor.lightGray
+                ])
+            view.startTimedAnimation()
+        }
+        
+    }
 
     @IBAction func settingButton(_ sender: Any) {
         
-//                let view = self.view as! ShiftView
-//                        view.setColors([UIColor.yellow,
-//                                        UIColor.orange,
-//                                        UIColor.red,
-//                                        UIColor.blue,
-//                                        UIColor.purple,
-//                                        UIColor.cyan,
-//                                        UIColor.green,
-//                                        //                        UIColor.lightGray,
-//                            ])
-//                        view.startTimedAnimation()
+
     }
 }
 
