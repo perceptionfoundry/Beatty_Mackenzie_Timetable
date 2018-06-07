@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C2E5FFEB4FCA4A14C7B65C783FB42233"
+               BlueprintIdentifier = "939728F3033FC95EDC808142FBFAE5CB"
                BlueprintName = "Shift"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "Shift.framework">

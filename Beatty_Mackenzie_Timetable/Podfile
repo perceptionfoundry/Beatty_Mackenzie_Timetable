@@ -7,6 +7,9 @@ target 'Beatty_Mackenzie_Timetable' do
 
   # Pods for Beatty_Mackenzie_Timetable
 
-pod "Shift"
+
+pod 'Firebase/Core'
+pod 'Firebase/Database'
+
 
 end

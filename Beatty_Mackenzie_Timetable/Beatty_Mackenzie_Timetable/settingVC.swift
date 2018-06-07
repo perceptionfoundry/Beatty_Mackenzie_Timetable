@@ -10,22 +10,25 @@ import UIKit
 
 class settingVC: UIViewController {
     
-    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    let Delegate = UIApplication.shared.delegate as! AppDelegate
 
     @IBOutlet weak var darkModeSwitch: UISwitch!
    
+    var darkStatus : Bool?
     
+    
+    var StatusDelegate : darkModeStatus!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        darkModeSwitch.isOn = appDelegate.darkMode
+        darkModeSwitch.isOn = Delegate.darkMode
 
         print("*********************")
 
         
         print(darkModeSwitch.isOn)
-        print(appDelegate.darkMode)
+        print(Delegate.darkMode)
         
         print("*********************")
         
@@ -39,21 +42,20 @@ class settingVC: UIViewController {
         
         print(sender.isOn)
         
-        if darkModeSwitch.isOn ==  true{
-            
-                        appDelegate.darkMode = false
-            
-                    }
-            
-                    else{
-            
-                        appDelegate.darkMode = true
-            
-                    }
+        darkStatus =  sender.isOn
+
     }
     
 
     @objc func Quit(){
+        
+        
+          print("@@@@@@@@@@@@@@@@@@@@@@")
+        let status = darkStatus!
+        print(status)
+        print("@@@@@@@@@@@@@@@@@@@@@@")
+        self.StatusDelegate.status(value: status)
+
         
         dismiss(animated: true, completion: nil)
     }
