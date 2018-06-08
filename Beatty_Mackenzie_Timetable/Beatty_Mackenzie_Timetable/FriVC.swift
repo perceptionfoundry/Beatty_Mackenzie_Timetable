@@ -12,15 +12,10 @@ import FirebaseDatabase
 import UserNotifications
 
 
-class FriVC: UIViewController, UITableViewDelegate, UITableViewDataSource, darkModeStatus, UITabBarControllerDelegate {
+class FriVC: UIViewController, UITableViewDelegate, UITableViewDataSource, darkModeStatus{
     
     
-    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
-        
-        print("FRIDAY ")
-
-        backgroundView()
-    }
+ 
     
     
     func status(value: Bool) {
@@ -38,6 +33,7 @@ class FriVC: UIViewController, UITableViewDelegate, UITableViewDataSource, darkM
     var autoChildKey = [String]()
     var TodayTask = [[String : String]]()
     
+    @IBOutlet weak var activityView: UIView!
     @IBOutlet weak var taskTable: UITableView!
 
     @IBOutlet weak var darkmodeView: UIView!
@@ -54,7 +50,6 @@ class FriVC: UIViewController, UITableViewDelegate, UITableViewDataSource, darkM
         print(Delegate.darkMode)
         
         //permission local user notification
-        self.tabBarController?.delegate = self
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { (success, error) in
             
             if error != nil{
@@ -82,7 +77,8 @@ class FriVC: UIViewController, UITableViewDelegate, UITableViewDataSource, darkM
             let value = dataSnapShot.value as! [String : String]
             self.TodayTask.append(value)
             self.taskTable.reloadData()
-            
+            self.activityView.isHidden = true
+
         })
         
         
@@ -92,6 +88,10 @@ class FriVC: UIViewController, UITableViewDelegate, UITableViewDataSource, darkM
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        backgroundView()
+    }
     
     
     

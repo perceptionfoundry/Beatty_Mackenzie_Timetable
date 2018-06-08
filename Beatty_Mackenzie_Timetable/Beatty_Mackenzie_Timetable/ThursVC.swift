@@ -12,14 +12,9 @@ import FirebaseDatabase
 import UserNotifications
 
 
-class ThursVC: UIViewController, UITableViewDelegate, UITableViewDataSource, darkModeStatus, UITabBarControllerDelegate {
+class ThursVC: UIViewController, UITableViewDelegate, UITableViewDataSource, darkModeStatus {
     
-    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
-        
-        print("THURSDAY ")
-
-        backgroundView()
-    }
+  
     
     func status(value: Bool) {
         Delegate.darkMode = value
@@ -39,6 +34,7 @@ class ThursVC: UIViewController, UITableViewDelegate, UITableViewDataSource, dar
     var autoChildKey = [String]()
     var TodayTask = [[String : String]]()
     
+    @IBOutlet weak var activityView: UIView!
     @IBOutlet weak var taskTable: UITableView!
     
     @IBOutlet weak var darkmodeView: UIView!
@@ -53,7 +49,6 @@ class ThursVC: UIViewController, UITableViewDelegate, UITableViewDataSource, dar
         super.viewDidLoad()
         
         print(Delegate.darkMode)
-        self.tabBarController?.delegate = self
         //permission local user notification
         
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { (success, error) in
@@ -83,7 +78,8 @@ class ThursVC: UIViewController, UITableViewDelegate, UITableViewDataSource, dar
             let value = dataSnapShot.value as! [String : String]
             self.TodayTask.append(value)
             self.taskTable.reloadData()
-            
+            self.activityView.isHidden = true
+
         })
         
         
@@ -93,7 +89,10 @@ class ThursVC: UIViewController, UITableViewDelegate, UITableViewDataSource, dar
         
     }
     
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        backgroundView()
+    }
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

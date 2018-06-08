@@ -23,7 +23,7 @@ class SetTimeVC: UIViewController {
         timePicker.addTarget(self, action: #selector(setTime), for: .valueChanged)
         //
         let formatter = DateFormatter()
-        formatter.dateFormat = "HH:MM"
+        formatter.dateFormat = "HH:mm"
         
         let time = formatter.string(from: self.timePicker.date)
         self.selectedTime = time
@@ -36,7 +36,7 @@ class SetTimeVC: UIViewController {
     @objc func setTime(){
         
         let formatter = DateFormatter()
-        formatter.dateFormat = "HH:MM"
+        formatter.dateFormat = "HH:mm"
         
         let time = formatter.string(from: self.timePicker.date)
         print(time)

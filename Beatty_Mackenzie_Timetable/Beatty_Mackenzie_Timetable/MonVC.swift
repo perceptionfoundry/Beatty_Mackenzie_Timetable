@@ -14,18 +14,12 @@ protocol darkModeStatus {
     func status (value : Bool)
 }
 
-class MonVC: UIViewController, UITableViewDelegate, UITableViewDataSource, darkModeStatus, UITabBarControllerDelegate, UITabBarDelegate{
+class MonVC: UIViewController, UITableViewDelegate, UITableViewDataSource, darkModeStatus{
    
   
     
-    func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-        print("check")
-    }
-    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
-        
-        print("MONDAY ")
-       backgroundView()
-    }
+   
+ 
     
     func status(value: Bool) {
         Delegate.darkMode = value
@@ -45,6 +39,7 @@ class MonVC: UIViewController, UITableViewDelegate, UITableViewDataSource, darkM
     var autoChildKey = [String]()
     var TodayTask = [[String : String]]()
     
+    @IBOutlet weak var activityView: UIView!
     @IBOutlet weak var tabItemButton: UITabBarItem!
     @IBOutlet weak var taskTable: UITableView!
     @IBOutlet weak var darkmodeView: UIView!
@@ -57,8 +52,8 @@ class MonVC: UIViewController, UITableViewDelegate, UITableViewDataSource, darkM
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        activityView.isHidden = false
     
-        self.tabBarController?.delegate = self
         print(Delegate.darkMode)
 
         //permission local user notification
@@ -95,6 +90,7 @@ class MonVC: UIViewController, UITableViewDelegate, UITableViewDataSource, darkM
             let value = dataSnapShot.value as! [String : String]
             self.TodayTask.append(value)
             self.taskTable.reloadData()
+            self.activityView.isHidden = true
 
         })
      
@@ -105,7 +101,10 @@ class MonVC: UIViewController, UITableViewDelegate, UITableViewDataSource, darkM
         
     }
     
- 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        backgroundView()
+    }
     
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
