@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import UserNotifications
+
 
 class settingVC: UIViewController {
     
@@ -23,7 +25,7 @@ class settingVC: UIViewController {
         super.viewDidLoad()
         
         darkModeSwitch.isOn = Delegate.darkMode
-
+        darkStatus = Delegate.darkMode
         print("*********************")
 
         
@@ -50,15 +52,61 @@ class settingVC: UIViewController {
     @objc func Quit(){
         
         
+
+        if let statusCheck = darkStatus{
           print("@@@@@@@@@@@@@@@@@@@@@@")
-        let status = darkStatus!
+        let status = statusCheck
         print(status)
         print("@@@@@@@@@@@@@@@@@@@@@@")
         self.StatusDelegate.status(value: status)
+            
+            
+            var notificationText : String
 
+            if status == false{
+                notificationText = " 'Deactivated' "
+            }
+            else{
+                notificationText = " 'Activated' "
+            }
+
+            if Delegate.Navi_Enable == true{
+            
+            taskNotification(Text: notificationText , inSecond: 0.2) { (success) in
+                
+                if success {
+                    print("YAHOO!!!!!")
+                }
+            }
+            }
         
         dismiss(animated: true, completion: nil)
+        }
     }
 
 
+    func taskNotification (Text : String, inSecond : TimeInterval, completion : @escaping (_ Success : Bool) -> ()){
+        
+        
+        let trigger  = UNTimeIntervalNotificationTrigger(timeInterval: inSecond, repeats: false)
+        
+        let Content = UNMutableNotificationContent()
+        
+        Content.title = "Dark Mode:"
+        Content.subtitle = Text
+      
+        
+        
+        let request = UNNotificationRequest(identifier: "Task_Notification", content: Content, trigger: trigger)
+        UNUserNotificationCenter.current().add(request) { (error) in
+            
+            if error != nil{
+                completion(false)
+            }
+            else{
+                completion(true)
+            }
+        }
+    }
+    
 }

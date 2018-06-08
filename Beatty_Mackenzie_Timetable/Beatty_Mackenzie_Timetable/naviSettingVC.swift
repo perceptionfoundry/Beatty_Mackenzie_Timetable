@@ -10,15 +10,55 @@ import UIKit
 
 class naviSettingVC: UIViewController {
 
+    let Delegate = UIApplication.shared.delegate as! AppDelegate
+    
+    @IBOutlet weak var naviModeSwitch: UISwitch!
+    
+    var naviStatus : Bool?
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        naviModeSwitch.isOn = Delegate.Navi_Enable
+        naviStatus = Delegate.Navi_Enable
+        print("*********************")
 
-        // Do any additional setup after loading the view.
+        
+        print(naviModeSwitch.isOn)
+        print(Delegate.Navi_Enable)
+        
+        print("*********************")
+        
+       
+        
+        
+        
     }
+    
+    
+    @IBAction func switchAction(_ sender: UISwitch) {
+        
+        print(sender.isOn)
+        
+        naviStatus =  sender.isOn
+        
+    }
+    
+    
+ 
+    
 
 
     @IBAction func backButton(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+       
+            Delegate.Navi_Enable = naviStatus!
+            
+            self.dismiss(animated: true, completion: nil)
+    
+        
+        
     }
     
 }

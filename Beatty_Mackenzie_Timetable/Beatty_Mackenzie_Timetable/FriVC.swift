@@ -1,31 +1,27 @@
 //
-//  ViewController.swift
+//  FriVC.swift
 //  Beatty_Mackenzie_Timetable
 //
-//  Created by Syed ShahRukh Haider on 05/06/2018.
+//  Created by Syed ShahRukh Haider on 08/06/2018.
 //  Copyright © 2018 Syed ShahRukh Haider. All rights reserved.
 //
+
 
 import UIKit
 import FirebaseDatabase
 import UserNotifications
 
-protocol darkModeStatus {
-    func status (value : Bool)
-}
 
-class MonVC: UIViewController, UITableViewDelegate, UITableViewDataSource, darkModeStatus, UITabBarControllerDelegate, UITabBarDelegate{
-   
-  
+class FriVC: UIViewController, UITableViewDelegate, UITableViewDataSource, darkModeStatus, UITabBarControllerDelegate {
     
-    func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-        print("check")
-    }
+    
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
         
-        print("MONDAY ")
-       backgroundView()
+        print("FRIDAY ")
+
+        backgroundView()
     }
+    
     
     func status(value: Bool) {
         Delegate.darkMode = value
@@ -35,39 +31,30 @@ class MonVC: UIViewController, UITableViewDelegate, UITableViewDataSource, darkM
         backgroundView()
     }
     
-    
 
-    
-    
     let Delegate = UIApplication.shared.delegate as! AppDelegate
-   
+    
     var sendData = [String : String]()
     var autoChildKey = [String]()
     var TodayTask = [[String : String]]()
     
-    @IBOutlet weak var tabItemButton: UITabBarItem!
     @IBOutlet weak var taskTable: UITableView!
+
     @IBOutlet weak var darkmodeView: UIView!
     var dbHandle : DatabaseHandle!
     var dbRef : DatabaseReference!
- 
+    
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-    
-        self.tabBarController?.delegate = self
+        
+        
         print(Delegate.darkMode)
-
+        
         //permission local user notification
-        
-        if tabItemButton.isEnabled == true{
-            
-            backgroundView()
-        }
-        
+        self.tabBarController?.delegate = self
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { (success, error) in
             
             if error != nil{
@@ -84,30 +71,30 @@ class MonVC: UIViewController, UITableViewDelegate, UITableViewDataSource, darkM
         
         dbRef = Database.database().reference()
         
-        dbHandle = dbRef.child("Monday").observe(.childAdded, with: { (dataSnapShot) in
+        dbHandle = dbRef.child("Friday").observe(.childAdded, with: { (dataSnapShot) in
             
             
             var key = dataSnapShot.key as! String
             
-//            print(key)
+            print(key)
             self.autoChildKey.append(key)
             
             let value = dataSnapShot.value as! [String : String]
             self.TodayTask.append(value)
             self.taskTable.reloadData()
-
+            
         })
-     
-
-     taskTable.delegate = self
-    taskTable.dataSource = self
+        
+        
+        taskTable.delegate = self
+        taskTable.dataSource = self
         
         
     }
     
- 
     
-
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return TodayTask.count
     }
@@ -117,7 +104,7 @@ class MonVC: UIViewController, UITableViewDelegate, UITableViewDataSource, darkM
         cell.selectionStyle = .none
         tableView.separatorStyle = .none
         
-//      print(TodayTask)
+//        print(TodayTask)
         
         cell.taskTitle.text = TodayTask[indexPath.row]["Title"]
         cell.timeLabel.text = TodayTask[indexPath.row]["Time"]
@@ -138,7 +125,7 @@ class MonVC: UIViewController, UITableViewDelegate, UITableViewDataSource, darkM
             print("Delete")
             
             
-            print(self.autoChildKey[indexPath.row])
+//            print(self.autoChildKey[indexPath.row])
             dbRef.child("Monday").child(self.autoChildKey[indexPath.row]).removeValue()
             TodayTask.remove(at: indexPath.row)
             taskTable.reloadData()
@@ -155,15 +142,15 @@ class MonVC: UIViewController, UITableViewDelegate, UITableViewDataSource, darkM
         }
     }
     func backgroundView(){
-
+        
         if Delegate.darkMode == false{
             darkmodeView.isHidden = true
-
+            
         }
-
+            
         else{
             darkmodeView.isHidden = false
-
+            
         }
         
     }
@@ -187,17 +174,17 @@ class MonVC: UIViewController, UITableViewDelegate, UITableViewDataSource, darkM
         }
     }
     
-
-  
+    
+    
     @IBAction func settingButton(_ sender: Any) {
         
-//      let VC = storyboard?.instantiateViewController(withIdentifier: "Setting")
-//        self.present(VC!, animated: true, completion: nil)
+        //      let VC = storyboard?.instantiateViewController(withIdentifier: "Setting")
+        //        self.present(VC!, animated: true, completion: nil)
         
         // Check notification
         
-
-
+        
+        
     }
     
     func taskNotification (Text : String, inSecond : TimeInterval, completion : @escaping (_ Success : Bool) -> ()){
@@ -209,7 +196,7 @@ class MonVC: UIViewController, UITableViewDelegate, UITableViewDataSource, darkM
         
         Content.title = "TASK DELETED"
         Content.subtitle = Text
-       
+        
         
         
         let request = UNNotificationRequest(identifier: "Task_Notification", content: Content, trigger: trigger)

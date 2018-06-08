@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseDatabase
+import UserNotifications
 
 protocol FetchTime {
     func setTime(Time : String)
@@ -16,7 +17,8 @@ protocol FetchTime {
 
 class CreateTackVC: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource,UITextFieldDelegate, FetchTime{
  
-    
+    let Delegate = UIApplication.shared.delegate as! AppDelegate
+
     var dbRef : DatabaseReference!
     
 
@@ -129,9 +131,25 @@ class CreateTackVC: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource
             print("******************")
             
             dbRef.child((self.taskDay)!).childByAutoId().setValue(firebaseDictionary)
+            
+            
+        
+            
+            if Delegate.Navi_Enable == true{
+                
+                taskNotification(Text: "New Task has been add into your record " , inSecond: 0.2) { (success) in
+                    
+                    if success {
+                        print("YAHOO!!!!!")
+                    }
+                }
+            }
+            
             self.dismiss(animated: true, completion: nil)
             
         }
+            
+            
         else {
             
             let alertVC = UIAlertController(title: "Warning", message: "Some Data Missing", preferredStyle: .alert)
@@ -147,4 +165,28 @@ class CreateTackVC: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource
         self.dismiss(animated: true, completion: nil)
     }
     
+    
+    func taskNotification (Text : String, inSecond : TimeInterval, completion : @escaping (_ Success : Bool) -> ()){
+        
+        
+        let trigger  = UNTimeIntervalNotificationTrigger(timeInterval: inSecond, repeats: false)
+        
+        let Content = UNMutableNotificationContent()
+        
+        Content.title = "TASK CREATED:"
+        Content.subtitle = Text
+        
+        
+        
+        let request = UNNotificationRequest(identifier: "Task_Notification", content: Content, trigger: trigger)
+        UNUserNotificationCenter.current().add(request) { (error) in
+            
+            if error != nil{
+                completion(false)
+            }
+            else{
+                completion(true)
+            }
+        }
+    }
 }

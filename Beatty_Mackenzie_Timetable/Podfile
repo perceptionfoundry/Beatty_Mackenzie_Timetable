@@ -10,6 +10,6 @@ target 'Beatty_Mackenzie_Timetable' do
 
 pod 'Firebase/Core'
 pod 'Firebase/Database'
-
+pod 'IQKeyboardManagerSwift'
 
 end
