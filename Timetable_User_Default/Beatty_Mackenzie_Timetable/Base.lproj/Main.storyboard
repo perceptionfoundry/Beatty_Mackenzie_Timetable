@@ -205,7 +205,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.62205693493150682" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pJX-8u-2Ya">
-                                <rect key="frame" x="12" y="66.5" width="351" height="527.5"/>
+                                <rect key="frame" x="12" y="86.5" width="351" height="507.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="taskCell" rowHeight="88" id="hAS-Em-3zg" customClass="taskCell" customModule="Beatty_Mackenzie_Timetable" customModuleProvider="target">
@@ -391,7 +391,7 @@
                             <constraint firstItem="vAI-W1-FDU" firstAttribute="top" secondItem="Gkl-wF-cGy" secondAttribute="bottom" id="oIF-cS-tvl"/>
                             <constraint firstAttribute="bottom" secondItem="DTf-dd-TLy" secondAttribute="bottom" id="tcV-xb-9hG"/>
                             <constraint firstItem="DTf-dd-TLy" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="utd-JX-UdQ"/>
-                            <constraint firstItem="pJX-8u-2Ya" firstAttribute="top" secondItem="Gkl-wF-cGy" secondAttribute="bottom" id="wg5-aI-RVb"/>
+                            <constraint firstItem="pJX-8u-2Ya" firstAttribute="top" secondItem="Gkl-wF-cGy" secondAttribute="bottom" constant="20" id="wg5-aI-RVb"/>
                             <constraint firstItem="DTf-dd-TLy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yqz-Ji-A5V"/>
                             <constraint firstItem="Gkl-wF-cGy" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="yyI-7U-lVk"/>
                         </constraints>
@@ -895,7 +895,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.62205693490000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="avs-IU-KLK">
-                                <rect key="frame" x="12" y="66.5" width="351" height="527.5"/>
+                                <rect key="frame" x="12" y="86.5" width="351" height="507.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="taskCell" rowHeight="88" id="iiw-Xq-XZd" customClass="taskCell" customModule="Beatty_Mackenzie_Timetable" customModuleProvider="target">
@@ -1079,7 +1079,7 @@
                             <constraint firstAttribute="bottom" secondItem="LWN-bB-I1q" secondAttribute="bottom" id="Yub-pl-iG6"/>
                             <constraint firstItem="kua-D2-NmB" firstAttribute="trailing" secondItem="kuM-K7-aZB" secondAttribute="trailing" id="Z8h-wg-7oQ"/>
                             <constraint firstItem="LWN-bB-I1q" firstAttribute="top" secondItem="wP6-Gn-k2u" secondAttribute="bottom" id="b9j-0l-kab"/>
-                            <constraint firstItem="avs-IU-KLK" firstAttribute="top" secondItem="wP6-Gn-k2u" secondAttribute="bottom" id="cuK-Qt-fyJ"/>
+                            <constraint firstItem="avs-IU-KLK" firstAttribute="top" secondItem="wP6-Gn-k2u" secondAttribute="bottom" constant="20" id="cuK-Qt-fyJ"/>
                             <constraint firstItem="kuM-K7-aZB" firstAttribute="trailing" secondItem="avs-IU-KLK" secondAttribute="trailing" constant="12" id="dRb-Qd-SZe"/>
                             <constraint firstItem="wP6-Gn-k2u" firstAttribute="height" secondItem="fsN-3B-cnv" secondAttribute="height" multiplier="0.1" id="e0H-CP-7l6"/>
                             <constraint firstItem="avs-IU-KLK" firstAttribute="leading" secondItem="kuM-K7-aZB" secondAttribute="leading" constant="12" id="vOC-o5-9D8"/>
@@ -1114,7 +1114,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.62205693490000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="m6b-Nz-C3z">
-                                <rect key="frame" x="12" y="66.5" width="351" height="527.5"/>
+                                <rect key="frame" x="12" y="86.5" width="351" height="507.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="taskCell" rowHeight="88" id="fNy-FH-MjT" customClass="taskCell" customModule="Beatty_Mackenzie_Timetable" customModuleProvider="target">
@@ -1302,7 +1302,7 @@
                             <constraint firstItem="R3q-fO-qJJ" firstAttribute="top" secondItem="eC3-d0-orm" secondAttribute="top" id="kbL-cH-Mec"/>
                             <constraint firstItem="idd-N0-cSF" firstAttribute="trailing" secondItem="fSc-Q3-55v" secondAttribute="trailing" id="wGd-JZ-osV"/>
                             <constraint firstItem="eWH-TI-DWy" firstAttribute="trailing" secondItem="fSc-Q3-55v" secondAttribute="trailing" id="xK5-z0-Tzn"/>
-                            <constraint firstItem="m6b-Nz-C3z" firstAttribute="top" secondItem="R3q-fO-qJJ" secondAttribute="bottom" id="xaO-Pp-Cx5"/>
+                            <constraint firstItem="m6b-Nz-C3z" firstAttribute="top" secondItem="R3q-fO-qJJ" secondAttribute="bottom" constant="20" id="xaO-Pp-Cx5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fSc-Q3-55v"/>
                     </view>
@@ -1333,7 +1333,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.62205693490000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Oux-Bt-UNQ">
-                                <rect key="frame" x="12" y="66.5" width="351" height="527.5"/>
+                                <rect key="frame" x="12" y="86.5" width="351" height="507.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="taskCell" rowHeight="88" id="oeu-El-iD5" customClass="taskCell" customModule="Beatty_Mackenzie_Timetable" customModuleProvider="target">
@@ -1520,7 +1520,7 @@
                             <constraint firstItem="6Xz-AJ-wgq" firstAttribute="top" secondItem="goj-0P-ZB6" secondAttribute="top" id="ccR-l5-M2d"/>
                             <constraint firstItem="6Xz-AJ-wgq" firstAttribute="trailing" secondItem="5lK-CJ-8Oz" secondAttribute="trailing" id="eae-LZ-CZ1"/>
                             <constraint firstItem="5lK-CJ-8Oz" firstAttribute="bottom" secondItem="Oux-Bt-UNQ" secondAttribute="bottom" constant="24" id="oh4-wT-ujc"/>
-                            <constraint firstItem="Oux-Bt-UNQ" firstAttribute="top" secondItem="6Xz-AJ-wgq" secondAttribute="bottom" id="uiR-0j-WjC"/>
+                            <constraint firstItem="Oux-Bt-UNQ" firstAttribute="top" secondItem="6Xz-AJ-wgq" secondAttribute="bottom" constant="20" id="uiR-0j-WjC"/>
                             <constraint firstItem="Oux-Bt-UNQ" firstAttribute="leading" secondItem="5lK-CJ-8Oz" secondAttribute="leading" constant="12" id="vEe-Mg-Vse"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5lK-CJ-8Oz"/>
@@ -1552,7 +1552,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.62205693490000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VRx-h4-UnT">
-                                <rect key="frame" x="12" y="66.5" width="351" height="527.5"/>
+                                <rect key="frame" x="12" y="86.5" width="351" height="507.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="taskCell" rowHeight="88" id="ofm-Rn-ru0" customClass="taskCell" customModule="Beatty_Mackenzie_Timetable" customModuleProvider="target">
@@ -1740,7 +1740,7 @@
                             <constraint firstItem="M9D-vz-iS3" firstAttribute="trailing" secondItem="VRx-h4-UnT" secondAttribute="trailing" constant="12" id="hn7-3i-2Ya"/>
                             <constraint firstAttribute="bottom" secondItem="6Qd-ZW-RR1" secondAttribute="bottom" id="mo8-va-mDF"/>
                             <constraint firstItem="6Qd-ZW-RR1" firstAttribute="trailing" secondItem="M9D-vz-iS3" secondAttribute="trailing" id="pwh-qo-l5m"/>
-                            <constraint firstItem="VRx-h4-UnT" firstAttribute="top" secondItem="O8w-VD-1jo" secondAttribute="bottom" id="vEe-tH-8W2"/>
+                            <constraint firstItem="VRx-h4-UnT" firstAttribute="top" secondItem="O8w-VD-1jo" secondAttribute="bottom" constant="20" id="vEe-tH-8W2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="M9D-vz-iS3"/>
                     </view>
