@@ -1,0 +1,500 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		38FE1762D6A96E4F876382AA /* Pods_Beatty_Mackenzie_Timetable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB508C2EA50705CF56693F84 /* Pods_Beatty_Mackenzie_Timetable.framework */; };
+		F234594D20C6B6910040F5A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234594C20C6B6910040F5A4 /* AppDelegate.swift */; };
+		F234594F20C6B6910040F5A4 /* MonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234594E20C6B6910040F5A4 /* MonVC.swift */; };
+		F234595220C6B6910040F5A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F234595020C6B6910040F5A4 /* Main.storyboard */; };
+		F234595420C6B6910040F5A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F234595320C6B6910040F5A4 /* Assets.xcassets */; };
+		F234595720C6B6910040F5A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F234595520C6B6910040F5A4 /* LaunchScreen.storyboard */; };
+		F234596A20C6BB100040F5A4 /* monday.png in Resources */ = {isa = PBXBuildFile; fileRef = F234596920C6BB100040F5A4 /* monday.png */; };
+		F234597020C6BC2D0040F5A4 /* thursday.png in Resources */ = {isa = PBXBuildFile; fileRef = F234596D20C6BC2D0040F5A4 /* thursday.png */; };
+		F234597120C6BC2D0040F5A4 /* wednesday.png in Resources */ = {isa = PBXBuildFile; fileRef = F234596E20C6BC2D0040F5A4 /* wednesday.png */; };
+		F234597220C6BC2D0040F5A4 /* friday.png in Resources */ = {isa = PBXBuildFile; fileRef = F234596F20C6BC2D0040F5A4 /* friday.png */; };
+		F234597420C6BC7D0040F5A4 /* tuesday.png in Resources */ = {isa = PBXBuildFile; fileRef = F234597320C6BC7D0040F5A4 /* tuesday.png */; };
+		F25A910420CA8F5F0080B60F /* TuesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25A910320CA8F5F0080B60F /* TuesVC.swift */; };
+		F25A910620CA8F700080B60F /* WedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25A910520CA8F700080B60F /* WedVC.swift */; };
+		F25A910820CA8F890080B60F /* ThursVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25A910720CA8F890080B60F /* ThursVC.swift */; };
+		F25A910A20CA8F9A0080B60F /* FriVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25A910920CA8F9A0080B60F /* FriVC.swift */; };
+		F2ADBA7B20C7B4660071E2C2 /* Custom_Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ADBA7A20C7B4660071E2C2 /* Custom_Button.swift */; };
+		F2ADBA7D20C7B4740071E2C2 /* Custom_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ADBA7C20C7B4740071E2C2 /* Custom_View.swift */; };
+		F2B2922E20C910D30020AD37 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2B2922D20C910D20020AD37 /* GoogleService-Info.plist */; };
+		F2B2923020C913C10020AD37 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F2B2922F20C913C10020AD37 /* bg.jpg */; };
+		F2B2923220C916D20020AD37 /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B2923120C916D20020AD37 /* setting.png */; };
+		F2B2923420C936170020AD37 /* taskDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B2923320C936170020AD37 /* taskDetailVC.swift */; };
+		F2C7E50720C7C07600CE8E9F /* task.png in Resources */ = {isa = PBXBuildFile; fileRef = F2C7E50620C7C07500CE8E9F /* task.png */; };
+		F2C7E50920C7C82E00CE8E9F /* taskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C7E50820C7C82E00CE8E9F /* taskCell.swift */; };
+		F2C7E50F20C7E26500CE8E9F /* CreateTackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C7E50E20C7E26500CE8E9F /* CreateTackVC.swift */; };
+		F2C7E51120C7EAB900CE8E9F /* settingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C7E51020C7EAB900CE8E9F /* settingVC.swift */; };
+		F2C7E51320C7EACD00CE8E9F /* naviSettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C7E51220C7EACD00CE8E9F /* naviSettingVC.swift */; };
+		F2C7E51720C7F8AF00CE8E9F /* SetTimeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C7E51620C7F8AF00CE8E9F /* SetTimeVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1043203CCF1623069FA9AE0E /* Pods-Beatty_Mackenzie_Timetable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beatty_Mackenzie_Timetable.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Beatty_Mackenzie_Timetable/Pods-Beatty_Mackenzie_Timetable.debug.xcconfig"; sourceTree = "<group>"; };
+		CB508C2EA50705CF56693F84 /* Pods_Beatty_Mackenzie_Timetable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beatty_Mackenzie_Timetable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F234594920C6B6910040F5A4 /* Beatty_Mackenzie_Timetable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beatty_Mackenzie_Timetable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F234594C20C6B6910040F5A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F234594E20C6B6910040F5A4 /* MonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonVC.swift; sourceTree = "<group>"; };
+		F234595120C6B6910040F5A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F234595320C6B6910040F5A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F234595620C6B6910040F5A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F234595820C6B6910040F5A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F234596920C6BB100040F5A4 /* monday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monday.png; sourceTree = "<group>"; };
+		F234596D20C6BC2D0040F5A4 /* thursday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thursday.png; sourceTree = "<group>"; };
+		F234596E20C6BC2D0040F5A4 /* wednesday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wednesday.png; sourceTree = "<group>"; };
+		F234596F20C6BC2D0040F5A4 /* friday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = friday.png; sourceTree = "<group>"; };
+		F234597320C6BC7D0040F5A4 /* tuesday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tuesday.png; sourceTree = "<group>"; };
+		F25A910320CA8F5F0080B60F /* TuesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuesVC.swift; sourceTree = "<group>"; };
+		F25A910520CA8F700080B60F /* WedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WedVC.swift; sourceTree = "<group>"; };
+		F25A910720CA8F890080B60F /* ThursVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThursVC.swift; sourceTree = "<group>"; };
+		F25A910920CA8F9A0080B60F /* FriVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriVC.swift; sourceTree = "<group>"; };
+		F2ADBA7A20C7B4660071E2C2 /* Custom_Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Custom_Button.swift; sourceTree = "<group>"; };
+		F2ADBA7C20C7B4740071E2C2 /* Custom_View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Custom_View.swift; sourceTree = "<group>"; };
+		F2B2922D20C910D20020AD37 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F2B2922F20C913C10020AD37 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
+		F2B2923120C916D20020AD37 /* setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting.png; sourceTree = "<group>"; };
+		F2B2923320C936170020AD37 /* taskDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskDetailVC.swift; sourceTree = "<group>"; };
+		F2C7E50620C7C07500CE8E9F /* task.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = task.png; sourceTree = "<group>"; };
+		F2C7E50820C7C82E00CE8E9F /* taskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskCell.swift; sourceTree = "<group>"; };
+		F2C7E50E20C7E26500CE8E9F /* CreateTackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTackVC.swift; sourceTree = "<group>"; };
+		F2C7E51020C7EAB900CE8E9F /* settingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingVC.swift; sourceTree = "<group>"; };
+		F2C7E51220C7EACD00CE8E9F /* naviSettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = naviSettingVC.swift; sourceTree = "<group>"; };
+		F2C7E51620C7F8AF00CE8E9F /* SetTimeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTimeVC.swift; sourceTree = "<group>"; };
+		F46B1932711A1728507CDE0A /* Pods-Beatty_Mackenzie_Timetable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beatty_Mackenzie_Timetable.release.xcconfig"; path = "Pods/Target Support Files/Pods-Beatty_Mackenzie_Timetable/Pods-Beatty_Mackenzie_Timetable.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F234594620C6B6910040F5A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38FE1762D6A96E4F876382AA /* Pods_Beatty_Mackenzie_Timetable.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A506D41F19E70E6DB9B7D74A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB508C2EA50705CF56693F84 /* Pods_Beatty_Mackenzie_Timetable.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C985F9E13A17D7144A574E76 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1043203CCF1623069FA9AE0E /* Pods-Beatty_Mackenzie_Timetable.debug.xcconfig */,
+				F46B1932711A1728507CDE0A /* Pods-Beatty_Mackenzie_Timetable.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F234594020C6B6910040F5A4 = {
+			isa = PBXGroup;
+			children = (
+				F234594B20C6B6910040F5A4 /* Beatty_Mackenzie_Timetable */,
+				F234594A20C6B6910040F5A4 /* Products */,
+				C985F9E13A17D7144A574E76 /* Pods */,
+				A506D41F19E70E6DB9B7D74A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F234594A20C6B6910040F5A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F234594920C6B6910040F5A4 /* Beatty_Mackenzie_Timetable.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F234594B20C6B6910040F5A4 /* Beatty_Mackenzie_Timetable */ = {
+			isa = PBXGroup;
+			children = (
+				F29CC71920C6C2A8006C6D67 /* custom */,
+				F234595E20C6BA9E0040F5A4 /* Image */,
+				F234594C20C6B6910040F5A4 /* AppDelegate.swift */,
+				F2B2923320C936170020AD37 /* taskDetailVC.swift */,
+				F2C7E51020C7EAB900CE8E9F /* settingVC.swift */,
+				F2C7E51220C7EACD00CE8E9F /* naviSettingVC.swift */,
+				F2C7E50E20C7E26500CE8E9F /* CreateTackVC.swift */,
+				F2C7E50820C7C82E00CE8E9F /* taskCell.swift */,
+				F2C7E51620C7F8AF00CE8E9F /* SetTimeVC.swift */,
+				F234595020C6B6910040F5A4 /* Main.storyboard */,
+				F234595320C6B6910040F5A4 /* Assets.xcassets */,
+				F234595520C6B6910040F5A4 /* LaunchScreen.storyboard */,
+				F234595820C6B6910040F5A4 /* Info.plist */,
+				F2B2922D20C910D20020AD37 /* GoogleService-Info.plist */,
+				F234594E20C6B6910040F5A4 /* MonVC.swift */,
+				F25A910320CA8F5F0080B60F /* TuesVC.swift */,
+				F25A910520CA8F700080B60F /* WedVC.swift */,
+				F25A910720CA8F890080B60F /* ThursVC.swift */,
+				F25A910920CA8F9A0080B60F /* FriVC.swift */,
+			);
+			path = Beatty_Mackenzie_Timetable;
+			sourceTree = "<group>";
+		};
+		F234595E20C6BA9E0040F5A4 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				F2B2923120C916D20020AD37 /* setting.png */,
+				F2B2922F20C913C10020AD37 /* bg.jpg */,
+				F2C7E50620C7C07500CE8E9F /* task.png */,
+				F234596920C6BB100040F5A4 /* monday.png */,
+				F234596F20C6BC2D0040F5A4 /* friday.png */,
+				F234596D20C6BC2D0040F5A4 /* thursday.png */,
+				F234597320C6BC7D0040F5A4 /* tuesday.png */,
+				F234596E20C6BC2D0040F5A4 /* wednesday.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		F29CC71920C6C2A8006C6D67 /* custom */ = {
+			isa = PBXGroup;
+			children = (
+				F2ADBA7C20C7B4740071E2C2 /* Custom_View.swift */,
+				F2ADBA7A20C7B4660071E2C2 /* Custom_Button.swift */,
+			);
+			path = custom;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F234594820C6B6910040F5A4 /* Beatty_Mackenzie_Timetable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F234595B20C6B6910040F5A4 /* Build configuration list for PBXNativeTarget "Beatty_Mackenzie_Timetable" */;
+			buildPhases = (
+				42DADCAB9FCC8394F524D69A /* [CP] Check Pods Manifest.lock */,
+				F234594520C6B6910040F5A4 /* Sources */,
+				F234594620C6B6910040F5A4 /* Frameworks */,
+				F234594720C6B6910040F5A4 /* Resources */,
+				3A5A1F5679F2B8AF962E44DF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Beatty_Mackenzie_Timetable;
+			productName = Beatty_Mackenzie_Timetable;
+			productReference = F234594920C6B6910040F5A4 /* Beatty_Mackenzie_Timetable.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F234594120C6B6910040F5A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Syed ShahRukh Haider";
+				TargetAttributes = {
+					F234594820C6B6910040F5A4 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = F234594420C6B6910040F5A4 /* Build configuration list for PBXProject "Beatty_Mackenzie_Timetable" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F234594020C6B6910040F5A4;
+			productRefGroup = F234594A20C6B6910040F5A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F234594820C6B6910040F5A4 /* Beatty_Mackenzie_Timetable */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F234594720C6B6910040F5A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2B2923220C916D20020AD37 /* setting.png in Resources */,
+				F234595720C6B6910040F5A4 /* LaunchScreen.storyboard in Resources */,
+				F234597020C6BC2D0040F5A4 /* thursday.png in Resources */,
+				F2C7E50720C7C07600CE8E9F /* task.png in Resources */,
+				F234597220C6BC2D0040F5A4 /* friday.png in Resources */,
+				F234597120C6BC2D0040F5A4 /* wednesday.png in Resources */,
+				F234595420C6B6910040F5A4 /* Assets.xcassets in Resources */,
+				F234597420C6BC7D0040F5A4 /* tuesday.png in Resources */,
+				F234596A20C6BB100040F5A4 /* monday.png in Resources */,
+				F2B2922E20C910D30020AD37 /* GoogleService-Info.plist in Resources */,
+				F2B2923020C913C10020AD37 /* bg.jpg in Resources */,
+				F234595220C6B6910040F5A4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A5A1F5679F2B8AF962E44DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Beatty_Mackenzie_Timetable/Pods-Beatty_Mackenzie_Timetable-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Beatty_Mackenzie_Timetable/Pods-Beatty_Mackenzie_Timetable-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42DADCAB9FCC8394F524D69A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Beatty_Mackenzie_Timetable-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F234594520C6B6910040F5A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F234594F20C6B6910040F5A4 /* MonVC.swift in Sources */,
+				F2C7E50F20C7E26500CE8E9F /* CreateTackVC.swift in Sources */,
+				F2C7E51720C7F8AF00CE8E9F /* SetTimeVC.swift in Sources */,
+				F25A910820CA8F890080B60F /* ThursVC.swift in Sources */,
+				F25A910420CA8F5F0080B60F /* TuesVC.swift in Sources */,
+				F2C7E51120C7EAB900CE8E9F /* settingVC.swift in Sources */,
+				F25A910A20CA8F9A0080B60F /* FriVC.swift in Sources */,
+				F2C7E51320C7EACD00CE8E9F /* naviSettingVC.swift in Sources */,
+				F2C7E50920C7C82E00CE8E9F /* taskCell.swift in Sources */,
+				F25A910620CA8F700080B60F /* WedVC.swift in Sources */,
+				F2B2923420C936170020AD37 /* taskDetailVC.swift in Sources */,
+				F2ADBA7D20C7B4740071E2C2 /* Custom_View.swift in Sources */,
+				F2ADBA7B20C7B4660071E2C2 /* Custom_Button.swift in Sources */,
+				F234594D20C6B6910040F5A4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F234595020C6B6910040F5A4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F234595120C6B6910040F5A4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F234595520C6B6910040F5A4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F234595620C6B6910040F5A4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F234595920C6B6910040F5A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F234595A20C6B6910040F5A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F234595C20C6B6910040F5A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1043203CCF1623069FA9AE0E /* Pods-Beatty_Mackenzie_Timetable.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SUBZ24DP5B;
+				INFOPLIST_FILE = Beatty_Mackenzie_Timetable/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.perception.Beatty-Mackenzie-Timetable";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F234595D20C6B6910040F5A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F46B1932711A1728507CDE0A /* Pods-Beatty_Mackenzie_Timetable.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SUBZ24DP5B;
+				INFOPLIST_FILE = Beatty_Mackenzie_Timetable/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.perception.Beatty-Mackenzie-Timetable";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F234594420C6B6910040F5A4 /* Build configuration list for PBXProject "Beatty_Mackenzie_Timetable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F234595920C6B6910040F5A4 /* Debug */,
+				F234595A20C6B6910040F5A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F234595B20C6B6910040F5A4 /* Build configuration list for PBXNativeTarget "Beatty_Mackenzie_Timetable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F234595C20C6B6910040F5A4 /* Debug */,
+				F234595D20C6B6910040F5A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F234594120C6B6910040F5A4 /* Project object */;
+}
