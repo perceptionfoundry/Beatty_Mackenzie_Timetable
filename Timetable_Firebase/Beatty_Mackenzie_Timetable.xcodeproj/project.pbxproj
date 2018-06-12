@@ -28,6 +28,7 @@
 		F2B2923020C913C10020AD37 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F2B2922F20C913C10020AD37 /* bg.jpg */; };
 		F2B2923220C916D20020AD37 /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B2923120C916D20020AD37 /* setting.png */; };
 		F2B2923420C936170020AD37 /* taskDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B2923320C936170020AD37 /* taskDetailVC.swift */; };
+		F2C380AE20CFC414001B3DDB /* firebase-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F2C380AD20CFC414001B3DDB /* firebase-logo.png */; };
 		F2C7E50720C7C07600CE8E9F /* task.png in Resources */ = {isa = PBXBuildFile; fileRef = F2C7E50620C7C07500CE8E9F /* task.png */; };
 		F2C7E50920C7C82E00CE8E9F /* taskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C7E50820C7C82E00CE8E9F /* taskCell.swift */; };
 		F2C7E50F20C7E26500CE8E9F /* CreateTackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C7E50E20C7E26500CE8E9F /* CreateTackVC.swift */; };
@@ -61,6 +62,7 @@
 		F2B2922F20C913C10020AD37 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
 		F2B2923120C916D20020AD37 /* setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting.png; sourceTree = "<group>"; };
 		F2B2923320C936170020AD37 /* taskDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskDetailVC.swift; sourceTree = "<group>"; };
+		F2C380AD20CFC414001B3DDB /* firebase-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "firebase-logo.png"; sourceTree = "<group>"; };
 		F2C7E50620C7C07500CE8E9F /* task.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = task.png; sourceTree = "<group>"; };
 		F2C7E50820C7C82E00CE8E9F /* taskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskCell.swift; sourceTree = "<group>"; };
 		F2C7E50E20C7E26500CE8E9F /* CreateTackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTackVC.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 		F234595E20C6BA9E0040F5A4 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				F2C380AD20CFC414001B3DDB /* firebase-logo.png */,
 				F2B2923120C916D20020AD37 /* setting.png */,
 				F2B2922F20C913C10020AD37 /* bg.jpg */,
 				F2C7E50620C7C07500CE8E9F /* task.png */,
@@ -238,6 +241,7 @@
 				F234596A20C6BB100040F5A4 /* monday.png in Resources */,
 				F2B2922E20C910D30020AD37 /* GoogleService-Info.plist in Resources */,
 				F2B2923020C913C10020AD37 /* bg.jpg in Resources */,
+				F2C380AE20CFC414001B3DDB /* firebase-logo.png in Resources */,
 				F234595220C6B6910040F5A4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -455,7 +459,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SUBZ24DP5B;
 				INFOPLIST_FILE = Beatty_Mackenzie_Timetable/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.perception.Beatty-Mackenzie-Timetable";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -471,7 +478,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SUBZ24DP5B;
 				INFOPLIST_FILE = Beatty_Mackenzie_Timetable/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.perception.Beatty-Mackenzie-Timetable";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
